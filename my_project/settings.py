@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-!9*3xxy+_v60!l5m8n(pn!umks+*z7%5b@pw&o4r#qzql_(kj2
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-ladyofgoats-lydiadjango-8rk4o4tvg3v.ws-eu114.gitpod.io']
+ALLOWED_HOSTS = ['8000-ladyofgoats-lydiadjango-08oo1cnzq0m.ws-eu114.gitpod.io']
 
 
 # Application definition
@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'hello_world',
-    'about',
+    
 ]
 
 MIDDLEWARE = [
@@ -70,6 +70,8 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'my_project.wsgi.application'
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 
 # Database
